@@ -1,5 +1,3 @@
-{/* <Input label="Username" type=text value={name} onChange={} placeholder="Enter the Name" */}
-
 type InputProps = {
     label: string;
     type: string;
@@ -7,6 +5,7 @@ type InputProps = {
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     placeholder?: string;
 }
+/* <Input label="Username" type=text value={name} onChange={} placeholder="Enter the Name" */
 
 const Input: React.FC<InputProps> = ({label, type, onChange, value, placeholder}) => {
 

@@ -50,6 +50,7 @@ function EditProduct(){
 
             const response = await axios.put(`http://localhost:9000/products/${params.id}`, product);
             alert("Product updated successfully");
+            console.log(response);
 
 
         } catch (error) {

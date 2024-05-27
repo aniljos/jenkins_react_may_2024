@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import './axios/interceptors'; // Register the axios interceptors
-import { AppThemeContext, AppThemeContextProvider, initialState } from './context/AppThemeContext';
+//import { AppThemeContext, AppThemeContextProvider, initialState } from './context/AppThemeContext';
+import { AppThemeContextProvider } from './context/AppThemeContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

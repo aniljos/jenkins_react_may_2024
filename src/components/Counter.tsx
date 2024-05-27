@@ -1,5 +1,6 @@
-import { count } from 'console';
-import {Component, ReactNode} from 'react';
+//import { count } from 'console';
+//import {Component, ReactNode} from 'react';
+import {Component} from 'react';
 
 type CounterProps = {
     value: number,

@@ -11,7 +11,7 @@ function ListProducts() {
     //let products: Array<Product> = [new Product(1, "abc", 70000, "some desc")];
 
     const navigate = useNavigate();
-    const auth = useSelector((state: any) => state.auth);
+    //const auth = useSelector((state: any) => state.auth);
 
     //useEffect(callback, [list of dependencies]);
     useEffect(() => {
@@ -54,39 +54,39 @@ function ListProducts() {
         }
     }
 
-    function fetchProducts() {
+    // function fetchProducts() {
 
-        // const promise = axios.get<Array<Product>>("http://localhost:9000/products");
-        // //promise.then(successCallback, errorCallback)
-        // promise.then((response) => {
+    //     // const promise = axios.get<Array<Product>>("http://localhost:9000/products");
+    //     // //promise.then(successCallback, errorCallback)
+    //     // promise.then((response) => {
 
-        //     console.log("success", response);
-        //     setProducts(response.data);
-        //     // products = response.data;
-        //     // console.log("products", products);
+    //     //     console.log("success", response);
+    //     //     setProducts(response.data);
+    //     //     // products = response.data;
+    //     //     // console.log("products", products);
 
-        // }, (error) => {
+    //     // }, (error) => {
 
-        //     console.log("error", error);
-        // })
+    //     //     console.log("error", error);
+    //     // })
 
-        axios
-            .get<Array<Product>>("http://localhost:9000/products")
-            .then((response) => {
-                console.log("success", response);
-                setProducts(response.data);
-                // products = response.data;
-                // console.log("products", products);
-            }, (error) => {
-                console.log("error", error);
-            })
+    //     axios
+    //         .get<Array<Product>>("http://localhost:9000/products")
+    //         .then((response) => {
+    //             console.log("success", response);
+    //             setProducts(response.data);
+    //             // products = response.data;
+    //             // console.log("products", products);
+    //         }, (error) => {
+    //             console.log("error", error);
+    //         })
 
-    }
+    // }
     async function deleteProduct(product: Product) {
 
         try {
             debugger;
-            const response = await axios.delete(`http://localhost:9000/secure_products/${product.id}`);
+            await axios.delete(`http://localhost:9000/secure_products/${product.id}`);
             alert(`Product with id: ${product.id} deleted`);
             //fetchProductsAsync();
 
