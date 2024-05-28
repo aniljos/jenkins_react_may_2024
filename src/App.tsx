@@ -24,7 +24,7 @@ function App() {
 
   return (
 
-    <Router>
+    <Router basename='/myapp/'>
     <div className='container-fluid'>
       <nav className={`navbar navbar-${themeContext.mode} bg-${themeContext.mode}`}>
         <div className='container'>
