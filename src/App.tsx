@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Message from './components/Message';
 import Counter from './components/Counter';
-import FnCounter from './components/FnCounter';
+//import FnCounter from './components/FnCounter';
 import ListProducts from './components/ListProducts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Link, Routes, Route} from 'react-router-dom';
