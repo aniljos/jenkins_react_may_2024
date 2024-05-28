@@ -28,7 +28,7 @@ function App() {
     <div className='container-fluid'>
       <nav className={`navbar navbar-${themeContext.mode} bg-${themeContext.mode}`}>
         <div className='container'>
-          <a className='navbar-brand' href="#">React</a>
+          <a className='navbar-brand' href="/">React</a>
           <ul className='nav'>
               <li className='nav-item'>
                   <Link className='nav-link' to="/">Home</Link>

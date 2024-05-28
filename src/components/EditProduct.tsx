@@ -27,7 +27,7 @@ function EditProduct(){
         fetchProduct();
 
 
-    }, [])
+    }, [params.id])
     
     function handleChangeName(evt: ChangeEvent<HTMLInputElement>){
 
