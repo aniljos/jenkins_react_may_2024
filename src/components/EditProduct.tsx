@@ -13,20 +13,22 @@ function EditProduct(){
 
     useEffect(() => {
 
+        const fetchProduct = async () => {
+        
+            try {
+                const response = await axios.get<Product>(`http://localhost:9000/products/${params.id}`);
+                setProduct(response.data);
+            } catch (error) {
+                
+            }
+        }
+
         nameInputRef.current?.focus();
         fetchProduct();
 
 
     }, [])
-    async function fetchProduct(){
-        
-        try {
-            const response = await axios.get<Product>(`http://localhost:9000/products/${params.id}`);
-            setProduct(response.data);
-        } catch (error) {
-            
-        }
-    }
+    
     function handleChangeName(evt: ChangeEvent<HTMLInputElement>){
 
         // const updateValue = evt.target.value;
