@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import {useDispatch} from 'react-redux'
-import React, {MouseEvent} from 'react';
-//import React from 'react';
+//import React, {MouseEvent} from 'react';
+import React from 'react';
 import { Product } from "../model/Product";
 import { CartItem } from "../model/CartItem";
 import {addToCart as addToRedux} from '../redux/gadgetReducer';
